@@ -1,0 +1,67 @@
+<!--<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <h1>CUJAE</h1>
+    </div>
+    <nav class="nav-links">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Inicio</a>
+  <a routerLink="/noticias" routerLinkActive="active">Noticias</a>
+  <a routerLink="/eventos" routerLinkActive="active">Eventos</a>
+    </nav>
+  </div>
+</header>-->
+
+<header class="main-header">
+  <nav class="navbar container">
+
+    <a class="logo" routerLink="/">CUJAE</a>
+
+    <ul class="menu">
+
+      <li><a routerLink="/">Inicio</a></li>
+
+      <!-- UNIVERSIDAD -->
+      <li class="submenu">
+        <a>Universidad</a>
+        <ul class="submenu-items">
+          <li><a routerLink="/historia">Historia</a></li>
+          <li><a routerLink="/mision">Misión y Visión</a></li>
+          <li><a routerLink="/organizacion">Organización</a></li>
+        </ul>
+      </li>
+
+      <!-- ESTUDIO -->
+      <li class="submenu">
+        <a>Estudio</a>
+        <ul class="submenu-items">
+          <li><a routerLink="/carreras">Carreras</a></li>
+          <li><a routerLink="/posgrados">Posgrados</a></li>
+          <li><a routerLink="/admisiones">Admisiones</a></li>
+        </ul>
+      </li>
+
+      <!-- INVESTIGACIONES -->
+      <li class="submenu">
+        <a>Investigaciones</a>
+        <ul class="submenu-items">
+          <li><a routerLink="/proyectos">Proyectos</a></li>
+          <li><a routerLink="/publicaciones">Publicaciones</a></li>
+        </ul>
+      </li>
+
+      <!-- RELACIONES INSTITUCIONALES -->
+      <li class="submenu">
+        <a>Relaciones Institucionales</a>
+        <ul class="submenu-items">
+          <li><a routerLink="/convenios">Convenios</a></li>
+          <li><a routerLink="/colaboraciones">Colaboraciones</a></li>
+        </ul>
+      </li>
+
+      <li><a routerLink="/noticias">Noticias</a></li>
+
+      <li><a routerLink="/login" class="login-btn">Acceder</a></li>
+
+    </ul>
+  </nav>
+</header>

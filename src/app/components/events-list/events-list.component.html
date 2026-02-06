@@ -1,0 +1,13 @@
+<section class="eventos-preview container">
+  <h2>Próximos Eventos</h2>
+  <div class="eventos-list">
+    <div *ngFor="let e of eventos" class="evento-card card">
+      <h3>{{ e.nombre }}</h3>
+      <p class="fecha">{{ e.fecha | date:'longDate' }}</p>
+      <p>Descripción breve del evento o actividad de interés para la comunidad universitaria.</p>
+    </div>
+  </div>
+  <div class="ver-mas">
+    <a routerLink="/eventos">Ver todos los eventos →</a>
+  </div>
+</section>

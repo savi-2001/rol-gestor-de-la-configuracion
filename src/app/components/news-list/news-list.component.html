@@ -1,0 +1,12 @@
+<div class="news-list">
+  <article *ngFor="let noticia of noticiasLimitadas" class="news-item card">
+    <h3>{{ noticia.titulo }}</h3>
+    <p class="fecha">{{ noticia.fecha | date:'longDate' }}</p>
+    <p>{{ noticia.descripcion }}</p>
+    <a routerLink="/noticias" class="leer-mas">Leer más →</a>
+  </article>
+
+  <div *ngIf="limit > 0 && noticias.length > limit" class="ver-mas">
+    <a routerLink="/noticias">Ver todas las noticias →</a>
+  </div>
+</div>

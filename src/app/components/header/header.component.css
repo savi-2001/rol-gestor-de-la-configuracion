@@ -1,0 +1,76 @@
+.main-header {
+  background: #003366;
+  padding: 15px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.menu a:hover {
+  color: #00b7ff;
+}
+
+/* SUBMENÚ */
+
+.submenu:hover .submenu-items {
+  display: block;
+}
+
+.submenu-items {
+  display: none;
+  position: absolute;
+  background: white;
+  top: 32px;
+  left: 0;
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.submenu-items li a {
+  display: block;
+  padding: 10px 15px;
+  color: #003366;
+}
+
+.submenu-items li a:hover {
+  background: #e6f3ff;
+}
+
+/* LOGIN */
+.login-btn {
+  background: #00b7ff;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+.login-btn:hover {
+  background: #0091cc;
+}

@@ -1,0 +1,26 @@
+<section class="hero">
+  <div class="hero-content container">
+    <h1>Bienvenidos a la CUJAE</h1>
+    <p>Institución líder en ingeniería, innovación y desarrollo.</p>
+  </div>
+</section>
+
+<div class="carousel-container container">
+  <button class="carousel-button prev" (click)="prevImage()">&#10094;</button>
+  <div class="carousel">
+    <img
+      *ngFor="let image of images; let i = index"
+      [src]="image"
+      [class.active]="i === currentIndex"
+      alt="Imagen del carrusel"
+    />
+  </div>
+  <button class="carousel-button next" (click)="nextImage()">&#10095;</button>
+</div>
+
+<section class="noticias-preview container">
+  <h2>Últimas Noticias</h2>
+  <app-news-list [limit]="3"></app-news-list>
+</section>
+
+<app-events-list></app-events-list>

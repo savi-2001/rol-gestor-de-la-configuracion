@@ -1,0 +1,194 @@
+/* Estilos generales */
+:host {
+    display: block;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Encabezado */
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px 0;
+    border-bottom: 2px solid #d32f2f;
+  }
+  
+  .header h1 {
+    color: #0c3c78;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+  }
+  
+  .logo-icon {
+    color: #d32f2f;
+    font-size: 2.8rem;
+  }
+  
+  /* Contenido principal */
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  @media (min-width: 768px) {
+    .content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Tarjetas de Misión y Visión */
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  }
+  
+  .mission {
+    border-top: 5px solid #0c3c78;
+  }
+  
+  .vision {
+    border-top: 5px solid #d32f2f;
+  }
+  
+  /* Encabezado de tarjetas */
+  .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  
+  .card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 1.8rem;
+  }
+  
+  .mission .card-icon {
+    background-color: rgba(12, 60, 120, 0.1);
+    color: #0c3c78;
+  }
+  
+  .vision .card-icon {
+    background-color: rgba(211, 47, 47, 0.1);
+    color: #d32f2f;
+  }
+  
+  .card-title {
+    font-size: 1.8rem;
+    color: #222;
+    font-weight: 700;
+  }
+  
+  /* Contenido de tarjetas */
+  .card-content {
+    font-size: 1.05rem;
+    color: #444;
+    text-align: justify;
+  }
+  
+  .card-content p {
+    margin-bottom: 15px;
+  }
+  
+  .highlight {
+    background-color: rgba(255, 235, 59, 0.2);
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-weight: 600;
+  }
+  
+  /* Sección de Valores */
+  .values {
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  }
+  
+  .values h3 {
+    text-align: center;
+    color: #0c3c78;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .value-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .value-icon {
+    color: #d32f2f;
+    font-size: 1.5rem;
+  }
+  
+  /* Pie de página */
+  .footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .university-name {
+    color: #0c3c78;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }

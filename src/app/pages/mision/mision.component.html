@@ -1,0 +1,53 @@
+<div class="header">
+    <div class="logo-container">
+      <i class="fas fa-university logo-icon"></i>
+      <h1>Universidad Tecnológica de La Habana</h1>
+    </div>
+    <p>"José Antonio Echeverría" (CUJAE)</p>
+  </div>
+  
+  <div class="content">
+    <!-- Tarjeta de Misión -->
+    <div class="card mission">
+      <div class="card-header">
+        <div class="card-icon">
+          <i class="fas {{ mision.icono }}"></i>
+        </div>
+        <h2 class="card-title">{{ mision.titulo }}</h2>
+      </div>
+      <div class="card-content">
+        <p *ngFor="let parrafo of mision.contenido" [innerHTML]="resaltarTexto(parrafo)"></p>
+      </div>
+    </div>
+  
+    <!-- Tarjeta de Visión -->
+    <div class="card vision">
+      <div class="card-header">
+        <div class="card-icon">
+          <i class="fas {{ vision.icono }}"></i>
+        </div>
+        <h2 class="card-title">{{ vision.titulo }}</h2>
+      </div>
+      <div class="card-content">
+        <p *ngFor="let parrafo of vision.contenido" [innerHTML]="resaltarTexto(parrafo)"></p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sección de Valores Fundamentales -->
+  <div class="values">
+    <h3>Valores Fundamentales</h3>
+    <div class="values-grid">
+      <div class="value-item" *ngFor="let valor of valoresFundamentales">
+        <i class="fas {{ valor.icono }} value-icon"></i>
+        <span>{{ valor.texto }}</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Pie de página -->
+  <div class="footer">
+    <div class="university-name">CUJAE</div>
+    <div>Universidad Tecnológica de La Habana "José Antonio Echeverría"</div>
+    <div>© {{ currentYear }} - Todos los derechos reservados</div>
+  </div>
